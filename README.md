@@ -1,13 +1,13 @@
 # 100 Days to Change Your Life
 
-# Welcome to the 100-Day Challenge Community!
+**Welcome to the 100-Day Challenge Community!**
 
 We are excited to have you embark on this journey of skill development and personal growth. Below are the guidelines to help you get started and stay on track throughout the challenge.
 
 ## Community Guidelines
 
 ### 1. Download and Submit the Promise Letter
-- **Download the Promise Form**: [Promise Letter Template](link)
+- **Download the Promise Form**: [Promise Letter Template](https://github.com/najirh/100_days_challenge_community/blob/main/100-Day%20Challenge%20Promise%20Letter.pdf)
 - **Fill it Out**: Enter your name and the skill you want to acquire in the next 100 days.
 - **Sign and Upload**: Sign the form and upload it in the **#introduce-yourself** channel.
 
