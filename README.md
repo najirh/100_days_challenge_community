@@ -4,6 +4,8 @@
 
 We are excited to have you embark on this journey of skill development and personal growth. Below are the guidelines to help you get started and stay on track throughout the challenge.
 
+## Join the Community of 50k Plus Global Members: [Click to Join +](https://discord.gg/4yJ6taSX)
+
 ## Community Guidelines
 
 ### 1. Download and Submit the Promise Letter
