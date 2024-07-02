@@ -49,4 +49,12 @@ We are excited to have you embark on this journey of skill development and perso
 
 Let’s make the next 100 days the most productive and transformative period of our lives. Together, we can achieve greatness!
 
+
+## Please subscribe to my YouTube channel and follow me on Instagram and LinkedIn to stay updated
+- YouTube: [Your YouTube Channel URL](https://www.youtube.com/@zero_analyst)
+- Instagram: [Your Instagram Profile URL](https://www.instagram.com/zero_analyst/)
+- LinkedIn: [Your LinkedIn Profile URL](https://www.linkedin.com/in/najirr)
+
+
+
 Happy Learning!
