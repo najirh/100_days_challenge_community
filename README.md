@@ -54,7 +54,7 @@ Let’s make the next 100 days the most productive and transformative period of 
 - YouTube: [Your YouTube Channel URL](https://www.youtube.com/@zero_analyst)
 - Instagram: [Your Instagram Profile URL](https://www.instagram.com/zero_analyst/)
 - LinkedIn: [Your LinkedIn Profile URL](https://www.linkedin.com/in/najirr)
-
+- Join Discord Our Community: [Discord Community Link](https://discord.gg/36h5f2Z5PK)
 
 
 Happy Learning!
