@@ -19,19 +19,10 @@ values
 SELECT * FROM transactions;
 
 
-Write an SQL query to report the IDs of the transactions
-with the maximum amount on their respective day. 
+-- Write an SQL query to report the IDs of the transactions
+-- with the maximum amount on their respective day. 
 
-If in one day there are multiple such transactions, return all of them.
-
-
-
-
-
-
-
-
-
+-- If in one day there are multiple such transactions, return all of them.
 
 SELECT 
 	transaction_id
@@ -45,10 +36,3 @@ FROM
 	FROM transactions
 	) as x
 WHERE ranks = 1
-
-
-
-
-
-
-
