@@ -8,8 +8,6 @@ CREATE TABLE user_activity (
     login_date DATE
 );
 
-
-
 INSERT INTO user_activity (user_id, login_date) VALUES
 (1, '2024-08-01'),
 (1, '2024-08-02'),
@@ -28,31 +26,24 @@ INSERT INTO user_activity (user_id, login_date) VALUES
 (4, '2024-08-05'),
 (4, '2024-08-07');
 
--- Given a user_activity table, write a SQL query to find all users who have logged in on at least 3 consecutive days.
-
-WITH steak_table
-AS    
-(SELECT 
-    user_id,
-    login_date,
-    CASE
-        WHEN login_date = LAG(login_date) OVER(PARTITION BY user_id ORDER BY login_date) + INTERVAL '1 day' THEN 1
-        ELSE 0
-    END as steaks
-FROM user_activity),
-steak2
-AS
-(SELECT 
-    user_id,
-    login_date,
-    SUM(steaks) OVER(PARTITION BY user_id ORDER BY login_date) as consecutive_login
-FROM steak_table    
+-- SQL query to find users who logged in on at least 3 consecutive days
+WITH consecutive_logins AS (
+    SELECT
+        user_id,
+        login_date,
+        login_date - INTERVAL (ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY login_date)) DAY AS streak_group
+    FROM user_activity
+),
+streaks AS (
+    SELECT
+        user_id,
+        COUNT(*) AS consecutive_days
+    FROM consecutive_logins
+    GROUP BY user_id, streak_group
 )
-SELECT 
-    distinct user_id
-FROM steak2
-WHERE consecutive_login >=2
-
+SELECT DISTINCT user_id
+FROM streaks
+WHERE consecutive_days >= 3;
 
 
 
