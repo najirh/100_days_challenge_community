@@ -1,60 +1,36 @@
--- SQL Challenge 44/100
+-- SQL Day 44/100 Challenge
 
-
-
-CREATE TABLE IF NOT EXISTS ActorDirector (
-    actor_id INT,
-    director_id INT,
-    timestamp INT
+DROP TABLE IF EXISTS employees;
+CREATE TABLE employees (
+    employee_id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2)
 );
 
-INSERT INTO ActorDirector (actor_id, director_id, timestamp) VALUES 
-    (1, 1, 0),
-    (1, 1, 1),
-    (1, 1, 2),
-    (1, 2, 3),
-    (1, 2, 4),
-    (2, 1, 5),
-    (2, 1, 6);
 
-SELECT * FROM ActorDirector;
+INSERT INTO employees (name, department, salary) VALUES
+('Alice', 'Sales', 50000),
+('Bob', 'Sales', 55000),
+('Charlie', 'Marketing', 60000),
+('Diana', 'IT', 70000),
+('Eve', 'IT', 65000),
+('Frank', 'HR', 48000);
 
-/*
-Write a SQL query for a report that provides the pairs (actor_id, director_id) 
-where the actor have co-worked with the director at least 3 times.
-*/
+BEGIN;
 
-Result table:
-+-------------+-------------+
-| actor_id    | director_id |
-+-------------+-------------+
-| 1           | 1           |
-+-------------+-------------+
+SELECT * FROM employees;
 
-SELECT 
-	actor_id,
-	director_id
-	-- COUNT(*)
-FROM ActorDirector
-GROUP BY 1, 2
-HAVING COUNT(*) >= 3
+-- Task Change employee salary from it to 90,000
+
+UPDATE employees
+SET salary = 9000
+WHERE department = 'IT'
 
 
+ROLLBACK;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+COMMIT;
 
 
 
