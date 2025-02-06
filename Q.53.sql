@@ -1,4 +1,5 @@
--- SQL Interview question - Q1
+-- SQL Interview question - Q53
+-- Get each employee id and number of input they have it
 
 
 CREATE TABLE input_table (
